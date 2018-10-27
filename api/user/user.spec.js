@@ -1,5 +1,7 @@
-const app = require('../index');
+// 테스트 로직
 const request = require('supertest');
+const should = require('should');
+const app = require('../../index');
 
 describe('GET /users는', () => {
   describe('성공시', () => {
@@ -97,7 +99,7 @@ describe('POST /users는', () => {
       body.should.have.property('name', name);
     });
   });
-  describe('성공시', () => {
+  describe('실패시', () => {
     it('name 파라미터 누락시 400을 반환한다', done => {
       request(app)
         .post('/users')

@@ -6,7 +6,8 @@
   "author": "eunwoo <aufcl4858@naver.com>",
   "license": "MIT",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha $(find ./test -name '*.spec.js') --recursive -w"
+    "start": "node api/bin/www.js",
+    "test": "NODE_ENV=test mocha api/user/user.spec.js"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
