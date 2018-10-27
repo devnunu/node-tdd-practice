@@ -1,0 +1,21 @@
+{
+  "name": "node-tdd-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nunu-dev/Node-TDD-Practice.git",
+  "author": "eunwoo <aufcl4858@naver.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha $(find ./test -name '*.spec.js') --recursive -w"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "supertest": "^3.3.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
